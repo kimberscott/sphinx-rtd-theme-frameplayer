@@ -136,7 +136,8 @@
             {% endif %}
             {% if nav_version %}
               <div class="version">
-                {{ nav_version }}
+                  {{ nav_version }}
+                  <p> <a href='https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/commits/{{ github_version }}' > See latest commits </a></p>
               </div>
             {% endif %}
           {% endif %}
