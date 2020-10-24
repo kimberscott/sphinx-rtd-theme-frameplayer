@@ -233,7 +233,12 @@ html
     margin-top: -1 * ($gutter / 4)
     margin-bottom: $gutter / 2
     font-weight: normal
-    color: rgba(255,255,255,.3)
+    color: lighten($nav-search-background-color, 90%)
+    > a, >a:visited
+      color: lighten($nav-search-background-color, 90%)
+      &:hover
+        background: $nav-link-color-hover
+
 
 .wy-nav .wy-menu-vertical
   header
