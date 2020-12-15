@@ -67,14 +67,6 @@
               SOURCELINK_SUFFIX: '{{ sourcelink_suffix }}'
           };
       </script>
-      
-      <script type="text/javascript">
-        <!-- Adds target=_blank to external links -->
-
-        $(document).ready(function () {
-          $('a[href^="http://"], a[href^="https://"]').not('a[class*=internal]').attr('target', '_blank');
-        });
-      </script>
       {%- for scriptfile in script_files %}
         <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
       {%- endfor %}
